@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+{% block title %} {% endblock %}
+{% block body %}
+<section class="content">
+      <div class="container-fluid">
+        <div class="row">
+          <!-- left column -->
+          <div class="mx-auto mt-2 col-md-8">
+            <!-- general form elements -->
+            <div class="card card-primary">
+              <div class="card-header">
+                <h3 class="card-title">Login</h3>s
+              </div>
+              <!-- /.card-header -->
+              <!-- form start -->
+              <form role="form" method="POST">
+                <div class="card-body">
+                    <div class="form-group">
+                    <label for="username">Username</label>
+                    <input name="username" type="text" class="form-control" id="username" placeholder="Enter Username" required>
+                  </div>
+                  <div class="form-group">
+                    <label for="password">Password</label>
+                    <input name="password" type="password" class="form-control" id="password" placeholder="Password" required>
+                  </div>
+                </div>
+                <!-- /.card-body -->
+
+                <div class="card-footer">
+                  <button type="submit" class="btn btn-primary">Login</button>
+                </div>
+              </form>
+            </div>
+            <!-- /.card -->
+            </section>
+{% endblock %}
